@@ -43,7 +43,6 @@ C:\Users\USUARIO\Desktop\projetos\asp.net_mvc\ControleEstoque\ControleEstoque.We
 C:\Users\USUARIO\Desktop\projetos\asp.net_mvc\ControleEstoque\ControleEstoque.Web\bin\pt-br\System.Web.WebPages.resources.dll
 C:\Users\USUARIO\Desktop\projetos\asp.net_mvc\ControleEstoque\ControleEstoque.Web\bin\pt-br\System.Web.WebPages.Deployment.resources.dll
 C:\Users\USUARIO\Desktop\projetos\asp.net_mvc\ControleEstoque\ControleEstoque.Web\bin\pt-br\System.Web.WebPages.Razor.resources.dll
-C:\Users\USUARIO\Desktop\projetos\asp.net_mvc\ControleEstoque\ControleEstoque.Web\obj\Debug\ControleEstoque.Web.csprojResolveAssemblyReference.cache
 C:\Users\USUARIO\Desktop\projetos\asp.net_mvc\ControleEstoque\ControleEstoque.Web\obj\Debug\ControleEstoque.Web.csproj.CoreCompileInputs.cache
 C:\Users\USUARIO\Desktop\projetos\asp.net_mvc\ControleEstoque\ControleEstoque.Web\obj\Debug\ControleEstoque.Web.dll
 C:\Users\USUARIO\Desktop\projetos\asp.net_mvc\ControleEstoque\ControleEstoque.Web\obj\Debug\ControleEstoque.Web.pdb
