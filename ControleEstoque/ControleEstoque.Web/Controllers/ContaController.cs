@@ -13,6 +13,9 @@ namespace ControleEstoque.Web.Controllers
         [AllowAnonymous]
         public ActionResult Login(string returnUrl)
         {
+            if (Request.IsAuthenticated)
+                return this.LogOff();
+                
             ViewBag.ReturnUrl = returnUrl;
             return View();
         }
