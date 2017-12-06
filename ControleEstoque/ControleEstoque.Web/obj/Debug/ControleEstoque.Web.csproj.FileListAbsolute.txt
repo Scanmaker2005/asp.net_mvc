@@ -46,3 +46,4 @@ C:\Users\USUARIO\Desktop\projetos\asp.net_mvc\ControleEstoque\ControleEstoque.We
 C:\Users\USUARIO\Desktop\projetos\asp.net_mvc\ControleEstoque\ControleEstoque.Web\obj\Debug\ControleEstoque.Web.csproj.CoreCompileInputs.cache
 C:\Users\USUARIO\Desktop\projetos\asp.net_mvc\ControleEstoque\ControleEstoque.Web\obj\Debug\ControleEstoque.Web.dll
 C:\Users\USUARIO\Desktop\projetos\asp.net_mvc\ControleEstoque\ControleEstoque.Web\obj\Debug\ControleEstoque.Web.pdb
+C:\Users\USUARIO\Desktop\projetos\asp.net_mvc\ControleEstoque\ControleEstoque.Web\obj\Debug\ControleEstoque.Web.csprojResolveAssemblyReference.cache

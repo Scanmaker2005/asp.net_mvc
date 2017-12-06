@@ -23,10 +23,8 @@ namespace ControleEstoque.Web.Controllers
         {
             if (!ModelState.IsValid)
                 return View(login);
-
-            var achou = (login.Usuario == "vinicius" && login.Senha == "123");
-
-            if (achou)
+            
+            if (UsuarioModel.ValidarUsuario(login.Usuario, login.Senha))
             {
                 FormsAuthentication.SetAuthCookie(login.Usuario, login.LembrarMe);
                 if (Url.IsLocalUrl(returnUrl))
