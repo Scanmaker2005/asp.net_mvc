@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
+using ControleEstoque.Web.Core;
 
 namespace ControleEstoque.Web.Controllers
 {
@@ -15,25 +16,24 @@ namespace ControleEstoque.Web.Controllers
         {
             if (Request.IsAuthenticated)
                 return this.LogOff();
-                
+
             ViewBag.ReturnUrl = returnUrl;
             return View();
         }
 
         [HttpPost]
         [AllowAnonymous]
-        public ActionResult Login(LoginViewModel login, string returnUrl)
+        public ActionResult Login(Usuario login, string returnUrl)
         {
             if (!ModelState.IsValid)
                 return View(login);
-            
-            if (UsuarioModel.ValidarUsuario(login.Usuario, login.Senha))
+
+            if(Usuario.login(login.email, login.senha,false))
             {
-                FormsAuthentication.SetAuthCookie(login.Usuario, login.LembrarMe);
                 if (Url.IsLocalUrl(returnUrl))
                     return Redirect(returnUrl);
                 else
-                    RedirectToAction("Index", "Home");
+                   return RedirectToAction("Index", "Home");
             }
             else
                 ModelState.AddModelError("", "Login inválido.");
@@ -45,7 +45,7 @@ namespace ControleEstoque.Web.Controllers
         [AllowAnonymous]
         public ActionResult LogOff()
         {
-            FormsAuthentication.SignOut();
+            Usuario.logout();
             return RedirectToAction("Index", "Home");
         }
     }

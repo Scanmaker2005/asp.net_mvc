@@ -40,7 +40,6 @@
                                 <li>@Html.ActionLink("Fornecedores", "Fornecedor", "Cadastro")</li>
                                 <li class="nav-divider"></li>
                                 <li>@Html.ActionLink("Perfis de Usuários", "PerfilUsuario", "Cadastro")</li>
-                                <li>@Html.ActionLink("Usuários", "Usuario", "Cadastro")</li>
                             </ul>
                         </li>
                         <li>
@@ -80,7 +79,7 @@
                     {
                         <ul class="nav navbar-nav navbar-right">
                             <li>@Html.ActionLink("Sobre", "Sobre", "Home")</li>
-                            <li><a href="#">Olá @User.Identity.Name</a></li>
+                            <li><a>@User.Identity.Name</a></li>
                             <li><a href="javascript:document.getElementById('logoffForm').submit()">Sair</a></li>
                         </ul>
                     }
